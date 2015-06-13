@@ -2,22 +2,8 @@
     <head>
         <title>VaaS</title>
     </head>
-    <body class="index">
-        <header>
-            <div class="profile">
-                {{#if currentUser}}
-                    <a data-profile>{{currentUser.profile.name}}</a>
-                {{else}}
-                    {{#if loggingIn}}
-                    Logging In....
-                    {{else}}
-                    {{> loginButtons}}
-                    {{/if}}
-                {{/if}}
-            </div>
-        </header>
-        <div>
-            {{> yield}}
-        </div>
+    <body>
+        {{> nav}}
+        {{> yield}}
     </body>
 </template>

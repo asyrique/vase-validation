@@ -1,4 +1,14 @@
 /* CSS declarations go here */
-.index .profile {
+.nav .profile-link {
     float:right;
+}
+
+.profile .container{
+    width:80%;
+    margin: 0 auto;
+}
+.profile .container .user-profile input {
+    width:100%;
+    clear: both;
+    margin: 20px 0;
 }

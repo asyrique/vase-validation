@@ -14,3 +14,5 @@ iron:router
 accounts-ui-unstyled
 service-configuration
 joshowens:simple-form
+jquery
+jeremy:selectize

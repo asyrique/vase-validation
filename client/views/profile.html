@@ -1,0 +1,22 @@
+<template name="Profile">
+    <section class="profile">
+        <div class="container">
+            <form class="user-profile">
+                <input type="text" value="{{name}}" id="name" placeholder="Your name">
+                <input type="text" value="{{gender}}" id="gender" placeholder="Male/Female">
+                <input type="text" value="{{birthdate}}" id="birthdate" placeholder="DDMMYYYY">
+                <input type="text" value="{{industry}}" id="industry" placeholder="Your industry">
+                <input type="text" value="{{occupation}}" id="occupation" placeholder="Your Occupation">
+                <input type="text" value="{{education}}" id="education" placeholder="Your education level">
+                <input type="text" value="{{location}}" id="location" placeholder="Your location">
+                <input type="text" value="{{religion}}" id="religion" placeholder="Your religion">
+                <input type="text" value="{{income}}" id="income" placeholder="Your Income">
+                <input type="text" value="{{languages}}" id="languages" placeholder="Your languages (Comma-separated)">
+                <input id="interests" value="{{interests}}" type="text" placeholder="Your interests (Comma-separated)">
+                <span><input type="checkbox" {{online}} id="online" value="online">Online Survey</span>
+                <span><input type="checkbox" {{skype}} id="skype" value="skype">Skype Calls</span>
+                <span><input type="checkbox" {{offline}} id="offline" value="offline">Offline Meeting</span>
+            </form>
+        </div>
+    </section>
+</template>
