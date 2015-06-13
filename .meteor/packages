@@ -7,3 +7,10 @@
 meteor-platform
 autopublish
 insecure
+accounts-facebook
+accounts-twitter
+pauli:accounts-linkedin
+iron:router
+accounts-ui-unstyled
+service-configuration
+joshowens:simple-form
