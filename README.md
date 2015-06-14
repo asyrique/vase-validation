@@ -1,2 +1,2 @@
-# angelhack15-vaas
+# Vase
 Validate your customers in a flash
