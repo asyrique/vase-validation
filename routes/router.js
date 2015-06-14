@@ -9,6 +9,37 @@ Router.configure({
 // Router.route('/survey', function () {
 //   this.render('Survey');
 // });
+if (Meteor.isServer) {
+  Router.map(function() {
+    this.route('serverRoute', {
+      path: '/',
+      where: 'server',
+      action: function() {
+        var contents = Assets.getText('index.html');
+        this.response.end(contents);
+      }
+    });
+
+    this.route('serverRoute1', {
+        path: '/vaser',
+        where: 'server',
+        action: function() {
+            var contents = Assets.getText('vaser.html');
+            this.response.end(contents);
+        }
+    });
+
+    this.route('serverRoute2', {
+        path: '/pricing',
+        where: 'server',
+        action: function() {
+            var contents = Assets.getText('pricing.html');
+            this.response.end(contents);
+        }
+    });
+
+  });
+}
 
 Router.map(function(){
     this.route('Profile', {
