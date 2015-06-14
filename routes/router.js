@@ -20,7 +20,7 @@ Router.map(function(){
 
         onStop: function() {
             $('body').removeClass('profile');
-            this.next();
+            //this.next();
         }
 
     });
@@ -47,7 +47,7 @@ Router.map(function(){
 
         onStop: function() {
             $('body').removeClass('reward');
-            this.next();
+            //this.next();
         },
     });
 });

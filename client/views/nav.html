@@ -1,15 +1,7 @@
 <template name="nav">
     <header class="nav">
         <div class="profile-link">
-            {{#if currentUser}}
-                <a data-profile>{{currentUser.profile.name}}</a>
-            {{else}}
-                {{#if loggingIn}}
-                Logging In....
-                {{else}}
-                {{> loginButtons}}
-                {{/if}}
-            {{/if}}
+            {{> loginButtons align="right"}}
         </div>
     </header>
 </template>

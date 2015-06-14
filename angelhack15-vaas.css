@@ -8,9 +8,14 @@
     margin: 0 auto;
 }
 .profile .container .user-profile input {
-    width:100%;
+    width: 100%;
     clear: both;
-    margin: 20px 0;
+    margin: 11px 0;
+    height: 49px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid #737373;
 }
 
 @-webkit-keyframes rotate {
@@ -107,6 +112,44 @@
 }
 
 .reward .next-survey h1{
+    margin:0;
+    padding-top:2em;
+}
+
+.profile .profpic{
+    background: url(/images/header_image.jpg);
+    height: 500px;
+}
+
+.profile .profpic img{
+    display:block;
+    margin:0 auto;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 9px;
+ }
+
+ .profile .profpic h1{
+    color: #FFF;
+    font-family: "Raleway";
+    font-weight: 100;
+    margin: 0;
+    position: absolute;
+    top: 38%;
+    left: 30%;
+ }
+
+ .profile .next-survey{
+    height:150px;
+    background-color:#00A35F;
+    text-align:center;
+    color:#FFF;
+}
+
+.profile .next-survey h1{
     margin:0;
     padding-top:2em;
 }

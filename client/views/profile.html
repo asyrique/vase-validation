@@ -1,4 +1,10 @@
 <template name="Profile">
+    <section class="profpic">
+        <div id="profpicwrap">
+            <img src="{{currentUser.profile.picture}}" alt="">
+            <h1>Welcome {{currentUser.profile.name}}</h1>
+        </div>
+    </section>
     <section>
         <div class="container">
             <form class="user-profile">
@@ -18,5 +24,8 @@
                 <span><input type="checkbox" {{offline}} id="offline" value="offline">Offline Meeting</span>
             </form>
         </div>
+    </section>
+    <section class="next-survey">
+        <h1><a href="{{ pathFor 'Survey' }}">Start your survey</a></h1>
     </section>
 </template>
