@@ -34,6 +34,19 @@ Router.map(function(){
 
         onStop: function() {
             $('body').removeClass('survey');
+            //this.next();
+        },
+    });
+
+    this.route('Reward', {
+        path: "/done",
+        onBeforeAction: function() {
+            $('body').addClass('reward');
+            this.next();
+        },
+
+        onStop: function() {
+            $('body').removeClass('reward');
             this.next();
         },
     });

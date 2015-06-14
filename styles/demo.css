@@ -19,7 +19,7 @@ html, body, .container {
 }
 
 body.survey {
-	background: #56BADA;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/fasspay_device.jpg); /*#56BADA*/
 	color: #fff;
 	font-weight: 400;
 	font-size: 1em;

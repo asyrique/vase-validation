@@ -12,3 +12,101 @@
     clear: both;
     margin: 20px 0;
 }
+
+@-webkit-keyframes rotate {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.reward #rays{
+    background:url(./images/rays-main.png) 0 0 no-repeat; 
+    position:relative; 
+    top:0; 
+    left:0; 
+    width:500px; 
+    height:500px; 
+    -webkit-animation: rotate 8s linear infinite;
+}
+.reward #ray-holder{
+    width:550px;
+    margin:0 auto;
+}
+.reward .victory{
+    background-color: #468B5E;
+}
+
+.reward #tick{
+    background:url(./images/tick.png) 0 0 no-repeat;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: block;
+    left: 41%;
+    top: 15%;
+    z-index: 100;
+}
+.reward .reward-selection #reward-h2{
+    padding: 3rem 0;
+    text-align: center;
+    color: #FFF;
+    font-size: 3rem;
+    margin: 0rem;
+    background-color: #333;
+}
+.reward .reward-selection div{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 1.5rem 0;
+    color: #FFF;
+    font-size: 2rem;
+}
+.reward .reward-selection .money{
+    background-color:#10A8CB;
+}
+.reward .reward-selection .trial{
+    background-color:#0BBB57;
+}
+.reward .victory h1{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    font-family: "Raleway";
+    position: relative;
+    top: -67px;
+}
+
+.reward .client-promo {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/fasspay_device.jpg);
+    background-size:cover;
+    height:600px;
+    text-align:center;
+    color:#FFF;
+}
+
+.reward .client-promo h1{
+    font-size: 3rem;
+    padding-top: 19rem;
+    margin-top: 1em;
+}
+
+.reward .client-promo p{
+    font-size:2rem;
+}
+
+.reward .next-survey{
+    height:150px;
+    background-color:#00A35F;
+    text-align:center;
+    color:#FFF;
+}
+
+.reward .next-survey h1{
+    margin:0;
+    padding-top:2em;
+}

@@ -2,62 +2,69 @@
     <div class="container">
         <div class="fs-form-wrap" id="fs-form-wrap">
             <div class="fs-title">
-                <h1>Project Worksheet</h1>
+                <h1>{{surveyName}}</h1>
             </div>
             <form id="myform" class="fs-form fs-form-full" autocomplete="off">
                 <ol class="fs-fields">
-                    <li>
-                        <label class="fs-field-label fs-anim-upper" for="q1">What's your name?</label>
-                        <input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Dean Moriarty" required/>
-                    </li>
-                    <li>
-                        <label class="fs-field-label fs-anim-upper" for="q2" data-info="We won't send you spam, we promise...">What's your email address?</label>
-                        <input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="dean@road.us" required/>
-                    </li>
                     <li data-input-trigger>
-                        <label class="fs-field-label fs-anim-upper" for="q3" data-info="This will help us know what kind of service you need">What's your priority for your new website?</label>
+                        <label class="fs-field-label fs-anim-upper" for="q1" data-info="This will help us tailor your future questions">Does your business accept credit cards?</label>
                         <div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-                            <span><input id="q3b" name="q3" type="radio" value="conversion"/><label for="q3b" class="radio-conversion">Sell things</label></span>
-                            <span><input id="q3c" name="q3" type="radio" value="social"/><label for="q3c" class="radio-social">Become famous</label></span>
-                            <span><input id="q3a" name="q3" type="radio" value="mobile"/><label for="q3a" class="radio-mobile">Mobile market</label></span>
+                            <span><input id="q1a" name="q1" type="radio" value="yes"/><label for="q1a" class="radio-yes">Yes</label></span>
+                            <span><input id="q1b" name="q1" type="radio" value="no"/><label for="q1b" class="radio-no">No</label></span>
                         </div>
                     </li>
-                    <!-- <li data-input-trigger>
-                        <label class="fs-field-label fs-anim-upper" data-info="We'll make sure to use it all over">Choose a color for your website.</label>
-                        <select class="cs-select cs-skin-boxes fs-anim-lower">
-                            <option value="" disabled selected>Pick a color</option>
-                            <option value="#588c75" data-class="color-588c75">#588c75</option>
-                            <option value="#b0c47f" data-class="color-b0c47f">#b0c47f</option>
-                            <option value="#f3e395" data-class="color-f3e395">#f3e395</option>
-                            <option value="#f3ae73" data-class="color-f3ae73">#f3ae73</option>
-                            <option value="#da645a" data-class="color-da645a">#da645a</option>
-                            <option value="#79a38f" data-class="color-79a38f">#79a38f</option>
-                            <option value="#c1d099" data-class="color-c1d099">#c1d099</option>
-                            <option value="#f5eaaa" data-class="color-f5eaaa">#f5eaaa</option>
-                            <option value="#f5be8f" data-class="color-f5be8f">#f5be8f</option>
-                            <option value="#e1837b" data-class="color-e1837b">#e1837b</option>
-                            <option value="#9bbaab" data-class="color-9bbaab">#9bbaab</option>
-                            <option value="#d1dcb2" data-class="color-d1dcb2">#d1dcb2</option>
-                            <option value="#f9eec0" data-class="color-f9eec0">#f9eec0</option>
-                            <option value="#f7cda9" data-class="color-f7cda9">#f7cda9</option>
-                            <option value="#e8a19b" data-class="color-e8a19b">#e8a19b</option>
-                            <option value="#bdd1c8" data-class="color-bdd1c8">#bdd1c8</option>
-                            <option value="#e1e7cd" data-class="color-e1e7cd">#e1e7cd</option>
-                            <option value="#faf4d4" data-class="color-faf4d4">#faf4d4</option>
-                            <option value="#fbdfc9" data-class="color-fbdfc9">#fbdfc9</option>
-                            <option value="#f1c1bd" data-class="color-f1c1bd">#f1c1bd</option>
-                        </select>
-                    </li> -->
-                    <li>
-                        <label class="fs-field-label fs-anim-upper" for="q4">Describe how you imagine your new website</label>
-                        <textarea class="fs-anim-lower" id="q4" name="q4" placeholder="Describe here"></textarea>
+                    <li data-input-trigger>
+                        <label class="fs-field-label fs-anim-upper" for="q2" data-info="We're interested in your expereince with them">Which payment provider do you use?</label>
+                        <div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+                            <span><input id="q2a" name="q2" type="radio" value="maybank"/><label for="q2a" class="radio-maybank">Maybank</label></span>
+                            <span><input id="q2b" name="q2" type="radio" value="ambank"/><label for="q2b" class="radio-ambank">Ambank</label></span>
+                            <span><input id="q2c" name="q2" type="radio" value="cimb"/><label for="q2c" class="radio-cimb">CIMB Bank</label></span>
+                            <span><input id="q2d" name="q2" type="radio" value=""/><label for="q2d" class="radio-other"><input type="text" placeholder="Other"></label></span>
+                        </div>
                     </li>
-                    <li>
-                        <label class="fs-field-label fs-anim-upper" for="q5">What's your budget?</label>
-                        <input class="fs-mark fs-anim-lower" id="q5" name="q5" type="number" placeholder="1000" step="100" min="100"/>
+                    <li data-input-trigger>
+                        <label class="fs-field-label fs-anim-upper" for="q3" data-info="What is the amount per transaction that you pay?">How much do you pay for using these providers?</label>
+                        <div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+                            <span><input id="q3a" name="q3" type="radio" value="2%"/><label for="q3a" class="radio-2">2%</label></span>
+                            <span><input id="q3b" name="q3" type="radio" value="3%"/><label for="q3b" class="radio-3">3%</label></span>
+                            <span><input id="q3c" name="q3" type="radio" value="4%"/><label for="q3c" class="radio-4">4%</label></span>
+                            <span><input id="q3d" name="q3" type="radio" value=""/><label for="q3d" class="radio-other"><input type="text" placeholder="Other"></label></span>
+                        </div>
+                    </li>
+                    <li data-input-trigger>
+                        <label class="fs-field-label fs-anim-upper" for="q4" data-info="Feel free to be candid. Your answers are anonymized before release.">What difficulties do you have with your provider?</label>
+                        <div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+                            <span><input id="q4a" name="q4" type="radio" value="minimum"/><label for="q4a" class="radio-minimum">Minimum transaction fees</label></span>
+                            <span><input id="q4b" name="q4" type="radio" value="expensive"/><label for="q4b" class="radio-expensive">Expensive fees</label></span>
+                            <span><input id="q4c" name="q4" type="radio" value="fail"/><label for="q4c" class="radio-fail">High fail rate</label></span>
+                            <span><input id="q4d" name="q4" type="radio" value=""/><label for="q4d" class="radio-other"><input type="text" placeholder="Other"></label></span>
+                        </div>
+                    </li>
+                    <li data-input-trigger>
+                        <label class="fs-field-label fs-anim-upper" for="q5" data-info="This will help us tailor your future questions">Do you believe sales will increase if you accept credit/debit cards everywhere?</label>
+                        <div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+                            <span><input id="q5a" name="q5" type="radio" value="yes"/><label for="q5a" class="radio-yes">Yes</label></span>
+                            <span><input id="q5b" name="q5" type="radio" value="no"/><label for="q5b" class="radio-no">No</label></span>
+                        </div>
+                    </li>
+                    <li data-input-trigger>
+                        <label class="fs-field-label fs-anim-upper" for="q6" data-info="Feel free to be candid. Your answers are anonymized before release.">By how much?</label>
+                        <div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+                            <span><input id="q6a" name="q6" type="radio" value="10%"/><label for="q6a" class="radio-10">10%</label></span>
+                            <span><input id="q6b" name="q6" type="radio" value="20%"/><label for="q6b" class="radio-20">20%</label></span>
+                            <span><input id="q6c" name="q6" type="radio" value="30%"/><label for="q6c" class="radio-30">30%</label></span>
+                            <span><input id="q6d" name="q6" type="radio" value=""/><label for="q6d" class="radio-other"><input type="text" placeholder="Other"></label></span>
+                        </div>
+                    </li>
+                    <li data-input-trigger>
+                        <label class="fs-field-label fs-anim-upper" for="q7" data-info="We've got something in store for you!">Will you be interested if we have a service which allows you to accept cards with your smartphone, with a lower charge and better security features?</label>
+                        <div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+                            <span><input id="q7a" name="q7" type="radio" value="yes"/><label for="q7a" class="radio-yes">Yes</label></span>
+                            <span><input id="q7b" name="q7" type="radio" value="no"/><label for="q7b" class="radio-no">No</label></span>
+                        </div>
                     </li>
                 </ol><!-- /fs-fields -->
-                <button class="fs-submit" type="submit">Send answers</button>
+                <a href="/done"><button class="fs-submit" type="submit">Send answers</button></a>
             </form><!-- /fs-form -->
         </div><!-- /fs-form-wrap -->
     </div><!-- /container -->

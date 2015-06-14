@@ -299,12 +299,12 @@ button.fs-continue,
 	width: 30%;
 	text-align: center;
 	font-weight: 700;
-	font-size: 50%;
+	font-size: 80%;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .fs-fields > li .fs-radio-custom span label {
-	color: rgba(0,0,0,0.4);
+	color: rgba(255,255,255,1);
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
@@ -342,16 +342,12 @@ button.fs-continue,
 	transform: translate(-50%,-50%);
 }
 
-.fs-fields .fs-radio-custom label.radio-mobile::after {
-	background-image: url(../img/mobile.svg);
+.fs-fields .fs-radio-custom label.radio-yes::after {
+	background-image: url(./images/correct.svg);
 }
 
-.fs-fields .fs-radio-custom label.radio-social::after {
-	background-image: url(../img/social.svg);
-}
-
-.fs-fields .fs-radio-custom label.radio-conversion::after {
-	background-image: url(../img/conversion.svg);
+.fs-fields .fs-radio-custom label.radio-no::after {
+	background-image: url(./images/remove.svg);
 }
 
 .fs-fields .fs-radio-custom label:hover::after,
