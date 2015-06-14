@@ -160,3 +160,10 @@
     height: 92vw;
     width: 100%;
 }
+
+.survey-jpeg {
+    background:url(./dashboard/vase_strong_survey_builder.jpg) 0 0 no-repeat;
+    background-size:contain;
+    height: 92vw;
+    width: 100%;
+}

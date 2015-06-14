@@ -89,4 +89,12 @@ Router.map(function(){
             this.next();
         }
     });
+
+    this.route('surveybuilder', {
+        path: "/builder",
+        onBeforeAction: function() {
+            $('body').addClass('builder');
+            this.next();
+        }
+    });
 });
