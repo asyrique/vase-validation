@@ -81,4 +81,12 @@ Router.map(function(){
             //this.next();
         },
     });
+
+    this.route('analytics', {
+        path: "/analytics",
+        onBeforeAction: function() {
+            $('body').addClass('analytics');
+            this.next();
+        }
+    });
 });

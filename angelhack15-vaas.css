@@ -153,3 +153,10 @@
     margin:0;
     padding-top:2em;
 }
+
+.analytics-jpeg {
+    background:url(./dashboard/vase_analytics_extended_version.jpg) 0 0 no-repeat;
+    background-size:contain;
+    height: 92vw;
+    width: 100%;
+}
