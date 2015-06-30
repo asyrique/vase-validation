@@ -12,11 +12,25 @@
     clear: both;
     margin: 11px 0;
     height: 49px;
-    border-radius: 6px;
+    border-radius: 0px;
     text-align: center;
-    font-size: 2rem;
-    border: 1px solid #737373;
+    font-size: 16px;
+    border: 1px solid #a0b3b0;
 }
+
+.profile .container .user-profile .selectize-input {
+    margin-top: 11px;
+    height: 49px;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.profile .container .user-profile .input-check {
+    width: auto;
+    height: auto;
+    margin: 1rem;
+}
+
 
 @-webkit-keyframes rotate {
     from{
@@ -118,7 +132,7 @@
 
 .profile .profpic{
     background: url(/images/header_image.jpg);
-    height: 500px;
+    height: 200px;
 }
 
 .profile .profpic img{
@@ -134,7 +148,7 @@
 
  .profile .profpic h1{
     color: #FFF;
-    font-family: "Raleway";
+    font-family: "Lato";
     font-weight: 100;
     margin: 0;
     position: absolute;
